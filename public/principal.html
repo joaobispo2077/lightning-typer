@@ -3,25 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <title>Lightning Typer</title>
+    <link rel="icon" href=".\img\lighting.png">
+    <!-- <link rel="stylesheet" href="./css/reset.css"> -->
+    <link rel="stylesheet" href="css/libs/google-fonts.css">
+    <link rel="stylesheet" href="css/libs/materialize.min.css">
+
+    <link rel="stylesheet" href="./css/styles.css">
+
 </head>
 <body>
-    <h1>Lightning Typer</h1>
-    <p class="phrase">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo
-        r incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis n
-        ostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-         aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-         deserunt mollit anim id est laborum.</p>
+    <div class="container">
+
+        <div class="logomarca">
+            <h1>Lightning Typer</h1>
+
+            <img src=".\img\lighting.png" width="64" height="64" alt="">
+        </div>
+
+        <p class="center" id="lema"> Test how fast you type.</p>
 
 
-    <ul class="info">
-        <li></class><span id="length-phrase"></span>Words</li>
-        <li>10 seconds</li>
-    </ul>
+        <p class="phrase center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo
+            r incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis n
+            ostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 
 
+        <ul class="info center">
+            <li>
+                <i class="small material-icons iconz">description</i>
+                <span id="length-phrase"></span> Words
+            </li>
+            <li>
+                <i class="small material-icons iconz">query_builder</i>
+                <span id="time-digitation">10</span> seconds
+            </li>
+        </ul>
+
+        <textarea class="field-digitation" rows="8" cols="80"></textarea>
+        <!-- <button id="btn-restart">Reiniciar Jogo</button> -->
+
+        <div class="buttons">
+             <a id="btn-restart" class="btn-floating btn-large waves-effect waves-light red" >
+                 <i class="material-icons">restore</i>
+             </a>
+        </div>
+
+
+
+
+        <ul class="center" >
+            <li></class><span id="count-char">0</span> Char</li>
+            <li><span id="count-words">0</span> Words</li>
+        </ul>
+
+
+        <section class="score">
+            <h3 class="center">Placar</h3>
+            <table class="centered bordered">
+                <thead>
+                    <tr>
+                        <th>User</th>
+                        <th>Nº Words</th>
+                        <th>Remove</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+
+
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+    </div>
+
+
+
+        <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="black-text">Thanks for visit</h5>
+                <p class="black-text text-lighten-4">
+                    You can enter my github and check out many other projects :)
+                </p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="black-text">Links</h5>
+                <ul>
+                  <li><a class="black-text text-lighten-3" href="https://github.com/joaobispo2077">GitHub</a></li>
+                  <li><a class="black-text text-lighten-3" href="https://www.linkedin.com/in/joão-bispo-2077/">Linkedin</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container black-text">
+            © 2020 - Project developed with the objective of improving my skills.
+            <!-- <a class="grey-text text-lighten-4 right" href="#!">More Links</a> -->
+            </div>
+          </div>
+        </footer>
 
     <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/score.js"></script>
 </body>
 </html>
