@@ -14,7 +14,7 @@
 <body>
     <div class="container">
 
-        <div class="logomarca">
+        <div class="logomarca center">
             <h1>Lightning Typer</h1>
 
             <img src=".\img\lighting.png" width="64" height="64" alt="">
@@ -22,10 +22,27 @@
 
         <p class="center" id="lema"> Test how fast you type.</p>
 
+        <div class="center">
+            <p id="erro">Oops.. an error has occurred, please try again!</p>
+        </div>
+
+        <div class="center" id="spinner">
+            <div class="preloader-wrapper medium active">
+                <div class="spinner-layer spinner-yellow-only ">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div><div class="gap-patch">
+                        <div class="circle"></div>
+                    </div><div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <p class="phrase center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo
             r incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis n
-            ostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            ostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
 
         <ul class="info center">
@@ -35,17 +52,41 @@
             </li>
             <li>
                 <i class="small material-icons iconz">query_builder</i>
-                <span id="time-digitation">10</span> seconds
+                <span id="time-digitation">3</span> seconds
             </li>
         </ul>
 
         <textarea class="field-digitation" rows="8" cols="80"></textarea>
         <!-- <button id="btn-restart">Reiniciar Jogo</button> -->
 
-        <div class="buttons">
+
+
+        <a id="btn-sync" class="btn-floating btn-large waves-effect waves-light yellow">
+           <i class="material-icons">swap_vert</i>
+       </a>
+
+        <div class="buttons right">
+            <a id="btn-score" class="btn-floating btn-large waves-effect waves-light green" >
+                <i class="material-icons">assignment</i>
+            </a>
+
+            <a id="btn-phrase" class="btn-floating btn-large waves-effect waves-light blue" >
+                <i class="material-icons">shuffle</i>
+            </a>
+
              <a id="btn-restart" class="btn-floating btn-large waves-effect waves-light red" >
                  <i class="material-icons">restore</i>
              </a>
+
+
+
+             <a id="btn-phrase-id" class="btn-floating btn-large waves-effect waves-light cyan ">
+                <i class="material-icons">repeat_one</i>
+            </a>
+
+            <input type="number" min="0" max="10" id="phrase-id">
+
+
         </div>
 
 
@@ -70,8 +111,13 @@
 
                 <tbody>
                     <tr>
-
-
+                        <td>Joao</td>
+                        <td>40</td>
+                        <td>
+                            <a href="#" class="btn-remove">
+                                <i class="small material-icons">delete</i>
+                            </a>
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -111,5 +157,6 @@
     <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
     <script src="js/score.js"></script>
+    <script src="js/phrase.js"></script>
 </body>
 </html>

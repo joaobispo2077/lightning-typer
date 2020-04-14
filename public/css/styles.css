@@ -3,6 +3,9 @@ body{
     color: #F5FFFA;
     /* color ORANGE-RED #FF4500 */
 
+    overflow: scroll;
+    overflow-x: hidden;
+
 
 
 }
@@ -11,23 +14,44 @@ h1{
 }
 
 .logomarca{
-    width: 60%;
+    width: 600px;
     height: auto;
     display: flex;
     text-align: center;
-
-
     background: #1C1C1C;
+
     padding: 15px;
+    padding-left: 50px;
+    padding-bottom: 0;
+    padding-top: 0px;
 
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 0px;
+
+}
+.logomarca h1{
+    margin-top: 5px;
 }
 .logomarca img{
 
     margin-left: 25px;
-    margin-top: 35px;
+    margin-top: 12px;
 
+}
+/* .logomarca img:hover{
+    cursor: pointer;
+} */
+#erro{
+    display: none;
+    color: red;
+    margin: 0;
+}
+#spinner{
+    display: none;
+    position: absolute;
+    z-index: 2;
+    left: 48%;
 }
 .phrase{
     font-size: 20px;
@@ -39,6 +63,11 @@ h1{
     font-size: 20px;
     margin-top: 0;
     text-align: center;
+    margin-bottom: 0;
+}
+#phrase-id {
+    width: 40px;
+    color: #F5FFFA;
 }
 .iconz{
     vertical-align: middle;
@@ -61,12 +90,15 @@ body ul{
 .border-red{
     border: 6px solid red;
 }
+.score{
+    display: none;
+}
 
 .container .buttons{
 
-    text-align: right;
+    /* text-align: right; */
     color: #1C1C1C;
-    margin-left: 87%;
+    /* float: right; */
 }
 footer.page-footer{
     /* background-color: #f3571c; */
@@ -74,4 +106,8 @@ footer.page-footer{
 }
 .white-text{
 
+}
+#btn-sync{
+    /* float: left; */
+    text-align: left;
 }

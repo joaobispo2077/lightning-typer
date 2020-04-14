@@ -1,9 +1,9 @@
 var api = {};
 
 var frases = [
-	{_id: 0, texto:'Alura, Cursos online de tecnologia que reinventam sua carreira.', tempo: 15 },
+	{_id: 0, texto:'Se você olhar demais para o passado ou futuro, pode perder o presente.', tempo: 15 },
 	{_id: 1, texto:'Debuggers não consertam erros, apenas os exibem em slow motion.',tempo: 8 },
-	{_id: 2, texto:'Caelum, Ensino e Inovação.', tempo: 5 },
+	{_id: 2, texto:'Life Long Learning, Ensino e Inovação.', tempo: 5 },
 	{_id: 3, texto:'Existem duas tarefas difíceis na Ciência da Computação: invalidação de cache e nomear as coisas.', tempo: 15 },
 	{_id: 4, texto:'Ciência da computação é tão sobre computadores quanto astronomia é sobre telescópios.', tempo: 15 },
 	{_id: 5, texto:'Na minha máquina funciona.', tempo: 5 },
