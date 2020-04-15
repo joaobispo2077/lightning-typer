@@ -4,7 +4,7 @@ $("#btn-sync").click(syncScore);
 function insertScore() {
 
     var tBody = $(".score").find("tbody");
-    var userName = "Joa0";
+    var userName = $("#users").val();
     var numWords = $("#count-words").text();
 
     var line = newLine(userName, numWords);
@@ -81,7 +81,18 @@ function syncScore() {
         };
 
         $.post("http://localhost:3000/placar", data, function(){
-            console.log("salvouuu");
+
+            console.log("Sync-Success");
+            $(".tooltip").tooltipster("open").tooltipster("content", "Success Sync");
+        }).fail(function () {
+
+                $(".tooltip").tooltipster("open").tooltipster("content", "Fail Sync");
+        
+        }).always(function () {
+            setInterval(function() {
+                $(".tooltip").tooltipster("close");
+            }, 2000);
+
         });
 }
 
