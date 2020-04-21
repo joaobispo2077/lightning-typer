@@ -1,0 +1,99 @@
+.bg-test{
+    position: absolute;
+    width: 50%;
+    height: 100vh;
+    background: red;
+    opacity: 10%;
+}
+
+/* GRADIENT TEXT ANIMATE*/
+.txt{
+    color: #ffffff;
+    background: #000000;
+    font-size: 60px;
+    font-weight: bold;
+
+
+}
+.txt::before{
+    content: 'Lightning Typer-';
+    position: absolute;
+    mix-blend-mode: difference;
+    filter: blur(3px);
+}
+.neon-wrapper{
+    display: inline-flex;
+    filter: brightness(200%);
+    overflow: hidden;
+}
+
+.gradient{
+    background: linear-gradient(90.38976119531799deg,
+    rgba(232, 32, 32,1) 9.076952236542835%,
+    rgba(235, 218, 35,1) 87.09059893858984%);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply;
+}
+
+.dodge {
+    background: radial-gradient(circle,white,black 35%) center / 25% 25%;
+    position: absolute;
+    top:-100%;
+    left:-100%;
+    right:0;
+    bottom:0;
+    mix-blend-mode: color-dodge;
+    animation: dodge-area 3s linear infinite;
+}
+@keyframes dodge-area {
+    to {
+        transform: translate(50%, 50%);
+    }
+}
+
+/*NEON EFFECT*/
+#lema{
+    height: 50px;
+    width: 230px;
+    color: #fff;
+}
+.neon{
+    /* position: absolute; */
+    /* position: relative; */
+    /* top: 50%;
+    width: 50%; */
+    transform: translate(-50%, -50%);
+    /* margin:0;s */
+    /* padding: 0 20px; */
+
+    color: #fff;
+    text-shadow: 0 0 20px #FFD700;
+
+    }
+
+.neon:after{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* padding: 0 20px; */
+    z-index: -1;
+    color: #FFD700;
+    filter: blur(15px);
+}
+
+.neon:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #FFD700;
+    z-index: -2;
+    opacity: .5;
+    filter: blur(40px);
+}

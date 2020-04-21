@@ -15,9 +15,11 @@
 
 
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/background-hover.css">
 
 </head>
 <body>
+<div class="mega-container"> </div>
     <div class="container">
 
         <div class="logomarca center">
@@ -26,8 +28,10 @@
             <img src=".\img\lighting.png" width="64" height="64" alt="">
         </div>
 
-        <p class="center" id="lema"> Test how fast you type.</p>
+        <p id="lema" class="center">Test how fast you type.</p>
+        <!-- class="neon center" data-text='Test how fast you type.' -->
 
+        
         <div class="center">
             <p id="erro">Oops.. an error has occurred, please try again!</p>
         </div>
@@ -70,43 +74,46 @@
 
 
 
-       <div class="buttons ">
+       <div class="buttons_container">
+            <!-- <div class="buttons_left"> -->
+                    <a id="btn-score" class="btn-posi btn-floating btn-large waves-effect waves-light green" >
+                        <i class="material-icons">assignment</i>
+                    </a>
 
-            <a id="btn-score" class="btn-floating btn-large waves-effect waves-light green" >
-                <i class="material-icons">assignment</i>
-            </a>
+                    <a id="btn-phrase" class="btn-posi btn-floating btn-large waves-effect waves-light blue" >
+                        <i class="material-icons">shuffle</i>
+                    </a>
 
-            <a id="btn-phrase" class="btn-floating btn-large waves-effect waves-light blue" >
-                <i class="material-icons">shuffle</i>
-            </a>
+                     <a id="btn-restart" class="btn-posi btn-floating btn-large waves-effect waves-light red" >
+                         <i class="material-icons">restore</i>
+                     </a>
+            <!-- </div> -->
 
-             <a id="btn-restart" class="btn-floating btn-large waves-effect waves-light red" >
-                 <i class="material-icons">restore</i>
-             </a>
+            <!-- <div class="buttons_center"> -->
+                    <a id="btn-phrase-id" class="btn-posi btn-floating btn-large waves-effect waves-light cyan ">
+                        <i class="material-icons">repeat_one</i>
+                   </a>
+                   <input type="number" min="0" max="10" id="phrase-id" class="btn-posi">
+            <!-- </div> -->
+
+            <!-- <div class="buttons_right"> -->
+                    <div class="select-users btn-posi">
+                        <select id="users">
+                            <option value="Bob">Bob</option>
+                            <option value="Laila">Laila</option>
+                            <option value="Frank">Frank</option>
+                            <!-- <option value="João">João</option> -->
+                            <!-- <option value="Viviane">Viviane</option>; -->
+                            <option value="Ana">Ana</option>
+                        </select>
+                    </div>
+                    <a id="btn-sync" class="btn-posi tooltip btn-floating btn-large waves-effect waves-light yellow"
+                    title="Sync Successful!">
+                        <i class="material-icons">swap_vert</i>
+                    </a>
 
 
-
-             <a id="btn-phrase-id" class="btn-floating btn-large waves-effect waves-light cyan ">
-                <i class="material-icons">repeat_one</i>
-            </a>
-
-            <input type="number" min="0" max="10" id="phrase-id">
-
-            <a id="btn-sync" class="tooltip btn-floating btn-large waves-effect waves-light yellow"
-            title="Sync Successful!">
-            <i class="material-icons">swap_vert</i>
-        </a>
-        
-            <div class="select-users">
-                <select id="users">
-                    <option value="Bob">Bob</option>
-                    <option value="Laila">Laila</option>
-                    <option value="Frank">Frank</option>
-                    <!-- <option value="João">João</option> -->
-                    <!-- <option value="Viviane">Viviane</option>; -->
-                    <option value="Ana">Ana</option>
-                </select>
-            </div>
+            <!-- </div> -->
 
         </div>
 
@@ -114,12 +121,12 @@
 
 
 
-        <ul class="center" >
+        <ul class="center info2" >
             <li></class><span id="count-char">0</span> Char</li>
             <li><span id="count-words">0</span> Words</li>
         </ul>
 
-
+<!-- <br><br><br><br><br><br><br><br> -->
         <section class="score">
             <h3 class="center">Scoreboard</h3>
             <table class="centered bordered">
@@ -132,15 +139,15 @@
                 </thead>
 
                 <tbody>
-                    <tr>
+                    <!-- <tr> -->
                         <!-- <td>Joao</td>
                         <td>40</td>
                         <td>
                             <a href="#" class="btn-remove">
                                 <i class="small material-icons">delete</i>
                             </a> -->
-                        </td>
-                    </tr>
+                        <!-- </td> -->
+                    <!-- </tr> -->
                 </tbody>
             </table>
         </section>
@@ -182,5 +189,7 @@
     <script src="js/phrase.js"></script>
     <script src="js/selectize.js"></script>
     <script src="js/tooltipster.bundle.min.js"></script>
+
+    <script src="js/background-hover.js"></script>
 </body>
 </html>

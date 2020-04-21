@@ -1,14 +1,14 @@
 body{
-    background: #1C1C1C;
-    color: #F5FFFA;
+    /* background: #1C1C1C; */
+    background: transparent;
+
+
     /* color ORANGE-RED #FF4500 */
 
     overflow: scroll;
     overflow-x: hidden;
-
-
-
 }
+
 h1{
     /* color: #FF4500; */
 }
@@ -18,7 +18,8 @@ h1{
     height: auto;
     display: flex;
     text-align: center;
-    background: #1C1C1C;
+    /* background: #1C1C1C; */
+    background: transparent;
 
     padding: 15px;
     padding-left: 50px;
@@ -32,6 +33,7 @@ h1{
 }
 .logomarca h1{
     margin-top: 5px;
+    color: #F5FFFA;
 }
 .logomarca img{
 
@@ -42,6 +44,12 @@ h1{
 /* .logomarca img:hover{
     cursor: pointer;
 } */
+.info{
+    color: #F5FFFA;
+}
+.info2{
+    color: #F5FFFA;
+}
 #erro{
     display: none;
     color: red;
@@ -57,6 +65,7 @@ h1{
     font-size: 20px;
     margin-top: 0;
     text-align: left;
+    color: #F5FFFA;
 
 }
 #lema{
@@ -96,7 +105,7 @@ body ul{
     display: none;
 }
 
-.container .buttons{
+.container .buttons_container{
 
     /* text-align: right; */
     color: #1C1C1C;
@@ -106,11 +115,12 @@ body ul{
     justify-content: space-between;
 
 }
-
-#btn-sync{
-    /* float: left; */
-
-    text-align: left;
+/* .container .buttons_left{
+    display: flex;
+    justify-content: space-between;
+} */
+.btn-posi {
+    /* position? */
 }
 
 .select-users{
@@ -119,6 +129,7 @@ body ul{
 }
 .selectize-input{
     width: 150px;
+    height: auto;
     vertical-align: middle;
 
 }

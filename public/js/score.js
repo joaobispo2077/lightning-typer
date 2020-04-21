@@ -15,16 +15,19 @@ function insertScore() {
 
     $(".score").slideDown(500);
     scrollScore();
+    console.log("Scroll"); //testar
 
 }
 
 function scrollScore(){
+
     var scorePosition = $(".score").offset().top;
+    console.log("var scroll "); //testar
 
     $("body").animate({
-
-        scrollTop: scorePosition + "px"
+        scrollTop: scorePosition + "px",
     }, 1000);
+    console.log("Scroll successful"); //testar
 
 }
 
@@ -51,8 +54,11 @@ function newLine(userName, numWords) {
 
 function removeLine(event) {
     event.preventDefault();
-
-    $(this).parent().parent().fadeOut(800).sleep(1000).remove();
+    var line = $(this).parent().parent();
+    line.fadeOut(1000);
+    setTimeout(function () {
+        line.remove();
+    }, 1200);
 }
 
 function showScore (){
@@ -87,7 +93,7 @@ function syncScore() {
         }).fail(function () {
 
                 $(".tooltip").tooltipster("open").tooltipster("content", "Fail Sync");
-        
+
         }).always(function () {
             setInterval(function() {
                 $(".tooltip").tooltipster("close");
