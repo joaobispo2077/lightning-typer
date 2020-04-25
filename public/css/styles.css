@@ -87,6 +87,8 @@ h1{
     height: 150px;
     border: 6px solid white;
     border-radius: 4px;
+    color: #f1f1f1;
+    font-weight: bold;
 }
 .field-disabled{
     background-color: #363636;
@@ -103,6 +105,7 @@ body ul{
 }
 .score{
     display: none;
+    color: #f1f1f1;
 }
 
 .container .buttons_container{
